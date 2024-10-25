@@ -1,21 +1,18 @@
-
 import os
 from telegram import Update, KeyboardButton, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters
-from dotenv import load_dotenv
 
-# Загрузка токена из .env файла
-load_dotenv()
-TOKEN = os.getenv("7904381577:AAFmEVH_-Ge9BhG1v9cL_QEf_ORvegq1PS4")
+# Вставь свой токен
+TOKEN = '7904381577:AAFmEVH_-Ge9BhG1v9cL_QEf_ORvegq1PS4'
 
 # Путь к файлу для хранения каналов
 CHANNELS_FILE = "channels.txt"
 
 # Список ID пользователей, которым разрешено пользоваться ботом
-ALLOWED_USERS = [123456789, 987654321]  # Замените на реальные ID пользователей
+ALLOWED_USERS = [353688342]  # Замените на реальные ID пользователей
 
 # Список ID администраторов, которые могут добавлять каналы
-ADMINS = [123456789]  # Замените на реальные ID администраторов
+ADMINS = [353688342]  # Замените на реальные ID администраторов
 
 # Функция для проверки, есть ли доступ у пользователя
 def is_allowed(user_id):
