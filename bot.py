@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 # Загрузка токена из .env файла
 load_dotenv()
-TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TOKEN = os.getenv("7904381577:AAFmEVH_-Ge9BhG1v9cL_QEf_ORvegq1PS4")
 
 # Путь к файлу для хранения каналов
 CHANNELS_FILE = "channels.txt"
